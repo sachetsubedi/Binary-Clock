@@ -6,15 +6,20 @@
 .main{
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 2em;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    background: linear-gradient(45deg,rgb(247, 35, 247),rgb(97, 97, 241));
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap: 1em;
-    background: linear-gradient(45deg,rgb(247, 35, 247),rgb(97, 97, 241));
 }
-
 .dots{
     height: 20px;
     width: 20px;
@@ -75,4 +80,22 @@
     align-items: center;
     flex-direction: column;
     gap: 1em;
+}
+.header{
+    font-size: 2em;
+    border-radius: 25px;
+    background: linear-gradient(45deg,rgb(222, 144, 238),rgb(162, 162, 247));
+    padding: 10px;
+    width: 32%;
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 5px 0px black;
+
+}
+.container{
+    background: linear-gradient(45deg,rgb(222, 144, 238),rgb(162, 162, 247));
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px 0px black;
+
 }
