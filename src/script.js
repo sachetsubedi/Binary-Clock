@@ -12,6 +12,9 @@ setInterval(()=>{
     const hr=date.getHours();
     const hrs=roundHours(hr);
     const mins=date.getMinutes();
+    if(mins<10){
+        mins='0'+mins;
+    }
     const secs=date.getSeconds();
     function toBinary(dec){
         return (parseInt(dec).toString(2));
