@@ -11,7 +11,7 @@ setInterval(()=>{
     let date= new Date();
     const hr=date.getHours();
     const hrs=roundHours(hr);
-    const mins=date.getMinutes();
+    let mins=date.getMinutes();
     if(mins<10){
         mins='0'+mins;
     }
