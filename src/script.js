@@ -25,12 +25,13 @@ setInterval(()=>{
     };
     
     function roundHours(hours){
-        if(hours<=12){
+        if(hours<=10){
             return "0"+hours;
         }
-        else{
+        else if(hours>12){
             return ("0"+hours%12);
-        }
+        } 
+        return hours;
     }
     function amChange(hrs){
         let am=document.getElementById('am');
@@ -38,14 +39,18 @@ setInterval(()=>{
         if(hrs>=12){
             pm.style.backgroundColor='red';
             pm.style.border='1px solid red';
+            pm.classList.add('boxShadow');
             am.style.backgroundColor='transparent';
             am.style.border='1px solid white';
+            am.classList.remove('boxShadow');
         }
         else{
             am.style.backgroundColor='red';
             am.style.border='1px solid red';
+            am.classList.add('boxShadow');
             pm.style.backgroundColor='transparent';
             pm.style.border='1px solid white';
+            pm.classList.remove('boxShadow');
         }
     }
     // -------------------------hours
@@ -76,11 +81,14 @@ setInterval(()=>{
             const dot=document.getElementById(`${e}`);
             dot.style.backgroundColor='transparent';
             dot.style.border='1px solid white';
+            dot.classList.remove('boxShadow');
         })
         code.forEach((c)=>{
             if(c==1){
                 const dot=document.getElementById(`${array[index]}`);
                 dot.style.backgroundColor='red';
+                // dot.classList.add('bg-red-700');
+                dot.classList.add('boxShadow');
                 dot.style.border='1px solid red';
             }
             index+=1;
