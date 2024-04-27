@@ -10,7 +10,8 @@ const secC2=["s2c4","s2c3","s2c2","s2c1"];
 setInterval(()=>{
     let date= new Date();
     const hr=date.getHours();
-    const hrs=roundHours(hr);
+    // const hrs=roundHours(hr);
+    const hrs=1;
     let mins=date.getMinutes();
     if(mins<10){
         mins='0'+mins;
@@ -95,8 +96,8 @@ setInterval(()=>{
             
         })
     }
-    lighter(hb1,hrsC1);
-    lighter(hb2,hrsC2);
+    lighter(hb1,hrsC2);
+    lighter(hb2,hrsC1);
     lighter(mb1,minC1);
     lighter(mb2,minC2);
     lighter(sb1,secC1);
