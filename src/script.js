@@ -10,8 +10,7 @@ const secC2=["s2c4","s2c3","s2c2","s2c1"];
 setInterval(()=>{
     let date= new Date();
     const hr=date.getHours();
-    // const hrs=roundHours(hr);
-    const hrs=1;
+    const hrs=roundHours(hr);
     let mins=date.getMinutes();
     if(mins<10){
         mins='0'+mins;
