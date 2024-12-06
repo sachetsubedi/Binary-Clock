@@ -52,7 +52,6 @@ setInterval(() => {
       pm.classList.remove("boxShadow");
     }
   }
-  console.log(hrs);
   // -------------------------hours
   let hd1 = split(hrs.toString())[0];
   let hd2 = split(hrs.toString())[1];
